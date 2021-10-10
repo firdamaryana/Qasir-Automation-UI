@@ -1,0 +1,11 @@
+test_number,test_type,hp,password,expected_display,test_desc
+0,N,08561736527,123456,Nomor tidak boleh diawali dengan nol "0",sent input hp with early 0 value
+1,N,,123456,No. Handphone wajib diisi,sent input hp blank
+2,N,856,123456,Nomor tidak boleh kurang dari 7 angka,sent input hp less than 7 number
+3,N,8561736527125125125,123456,Nomor tidak boleh lebih dari 15 angka,sent input hp more than 15 number
+4,N,.+,123456,Please enter a valid number.,sent input hp point value
+5,N,8561736527,25,PIN harus terdiri dari 6 digit,sent input pin less than 6 number
+6,N,8561736527,,PIN wajib diisi,sent input pin blank
+7,N,8561736527,+++...,PIN harus angka,sent input symbol
+8,N,8561736527,555551,Password kamu salah,sent invalid password
+9,N,8561736555,123456,Akun tidak ditemukan.,sent not existing hp

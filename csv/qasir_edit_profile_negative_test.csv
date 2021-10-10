@@ -1,0 +1,10 @@
+test_number,test_type,first_name,last_name,hp,email,refferal_code,old_password,new_password,confirmation_password,expected_display,test_desc
+0,N,,Automation,628561736527,fordamaryanaa@gmail.com,,123456,123456,123456,Nama Depan wajib diisi.,send input blank first name
+1,N,Firda,Automation,adbc,fordamaryanaa@gmail.com,,123456,123456,123456,Nomor Telepon harus berupa angka.,send input alphabet phone number
+2,N,Firda,Automation,0,fordamaryanaa@gmail.com,,123456,123456,123456,Nomor harus minimal 10 digit dan maksimal 15 digit,send input 0 phone number
+3,N,Firda,Automation,628561736527,fordamaryanaa@gmail.com,,abc,123456,123456,PIN Lama harus berupa angka.,send input alphabet old pin
+4,N,Firda,Automation,628561736527,fordamaryanaa@gmail.com,,123456,666666,123456,Konfirmasi PIN Baru tidak cocok.,send invalid combination
+5,N,Firda,Automation,628561736527,fordamaryanaa@gmail.com,,123456,666666,,Konfirmasi PIN Baru tidak cocok.,send invalid combination
+6,N,Firda,Automation,628561736527,fordamaryanaa@gmail.com,,123456,,123456,Konfirmasi PIN Baru tidak cocok.,send invalid combination
+7,N,Firda,Automation,628561736527,fordamaryanaa@gmail.com,,123456,abcd,123456,PIN Baru harus berupa angka.,send input alphabet new pin
+8,N,Firda,Automation,628561736527,fordamaryanaa@gmail.com,,123456,123456,abcd,PIN Baru harus berupa angka.,send input alphabet confirmation pin
